@@ -27,6 +27,10 @@ module tb ();
   wire VGND = 1'b0;
 `endif
 
+  // Wire used for cocotb test
+  wire uo_out_bit0;
+  assign uo_out_bit0 = uo_out[0];
+
   // Replace tt_um_example with your module name:
   tt_um_uwasic_onboarding_seanhua user_project (
 
